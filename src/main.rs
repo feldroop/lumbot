@@ -61,8 +61,8 @@ async fn main() -> Result<(), fantoccini::error::CmdError> {
             .collect();
 
         // check if color is brown -> there is a branch on the right
-        for color in &colors {
-            if *color == BROWN {
+        for color in colors {
+            if color == BROWN {
                 left.clone().click().await?;
                 left.clone().click().await?;
             } else {
@@ -70,7 +70,6 @@ async fn main() -> Result<(), fantoccini::error::CmdError> {
                 right.clone().click().await?;
             }
         }
-
         // sleep to wait for the animation to complete
         sleep(Duration::from_millis(args.delay)).await;
     }
