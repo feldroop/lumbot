@@ -7,7 +7,9 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "fs", "io-util"] }
-fantoccini = { version = "0.17", features = ["rustls-tls"] }
 structopt = { version = "0.3", default-features = false }
+serde_json = "1"
+serde = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+fantoccini = { version = "0.17", features = ["rustls-tls"] }
 winapi = { version = "0.3.9", features = ["wingdi", "winuser"] }

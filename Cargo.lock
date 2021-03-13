@@ -439,6 +439,8 @@ name = "lumbot"
 version = "0.1.0"
 dependencies = [
  "fantoccini",
+ "serde",
+ "serde_json",
  "structopt",
  "tokio",
  "winapi",
