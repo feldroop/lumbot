@@ -5,6 +5,7 @@ A bot for the Telegram HTML game lumberjack
 
 You need:
 
+* The toolchain of the Rust programming language (cargo)
 * A webdriver, e.g. chromedriver
 * A text file with the url to your lumberjack game
 * A JSON file with pixel values of your screen with the following Syntax:
